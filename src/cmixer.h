@@ -8,6 +8,10 @@
 #ifndef CMIXER_H
 #define CMIXER_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
 #define CM_VERSION "0.1.1"
 
 typedef short           cm_Int16;
@@ -73,4 +77,9 @@ void cm_play(cm_Source *src);
 void cm_pause(cm_Source *src);
 void cm_stop(cm_Source *src);
 
-#endif
+
+#ifdef __cplusplus
+}
+#endif // __cplusplus
+
+#endif // CMIXER_H
